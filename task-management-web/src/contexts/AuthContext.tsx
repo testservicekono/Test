@@ -1,5 +1,6 @@
 // src/contexts/AuthContext.tsx
-import React, { createContext, useState, useEffect, useContext, ReactNode } from 'react';
+import React, { createContext, useState, useEffect, useContext } from 'react';
+import type { ReactNode } from 'react';
 import { login, register, getAuthUser } from '../api/authService';
 import type { User } from '../types';
 import { jwtDecode } from 'jwt-decode'; // Correct import for named export
